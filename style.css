@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.contanier{
+    margin: auto;
+    padding: 0 15px;
+}
+.home{
+    height: 100vh;
+    background-image: url(slider-01.jpg) ;
+    background-size: cover;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604);
+    
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color:#0000009a;
+    padding:10px 0;
+    margin: 0 auto;
+    z-index: 999;
+}
+.navbar h2{
+    color: #ff305b; 
+    display: inline;
+    padding:10px 15px ;
+}
+.navbar ul{
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    transition: all 1s;
+}
+.navbar ul li a:hover{
+    color: #ff305b;
+}
+label{
+    font-size: 20px;
+    color: rgb(255, 48, 91);
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+input{
+    display: none;
+}
+.clr{
+    clear: both;
+}
+.text1{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 16%;
+}
+.text1 h3{
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.text1 h1{
+    font-size: 60px;
+    color: #ff305b;
+}
+.text1 h4{
+    font-size:25px ;
+}
+
+.about{
+    padding:50px 0;
+    height: 90%;
+}
+.about .imag,.about .text2{
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+}
+.about .imag img{
+    width: 100%;
+    border-radius: 15px;
+}
+.frame{
+    width:70%;
+    margin-left: 50px;
+    border: 8px solid #000;
+    border-radius: 15px;
+}
+ul{
+    list-style: none;
+}
+.imglayer {
+    transform: translate(20px ,20px);
+    position: relative;
+    overflow: hidden;
+ }
+ .layer2{
+    background-color: #abadb08c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: 0.6s;
+ }
+ .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ .imglayer:hover .layer2{
+     top: 0%;
+ }
+ /* .frame .icon i:hover {
+     color: #ff305b !important;
+ } */
+ .text2{
+    padding: 50px 0;
+ }
+ .text2 h2{
+    position: relative;
+ }
+ .text2 h2::before{
+    content:"";
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: #ff305b;
+    left:-6px;
+ }
+ .text2 p{
+    padding: 20px 0;
+    border-bottom: 1px dashed #000;
+ }
+ .text2 ul{
+    float: left;
+    width: 50%;
+    padding-top: 15px;
+ }
+ .text2 ul li{
+    padding:5px 0;
+ }
+ /* about */
+ .btn a{
+   padding: 15px 20px;
+   background-color: #ff305b;
+   text-decoration: none;
+   color: #ffff;
+   display:inline-block;
+   border-radius: 15px;
+   margin:10px 10px;
+   transition: 0.5s;
+}
+.btn a:hover{
+    background-color: #94122c;
+}
+/* services */
+.services {
+    width: 100%;
+    height: auto;
+    background-color:RGB(241, 241, 241);
+}
+.services h2 ,.portfolio h2 ,.Blog h2 ,.Testimonial h2 , .Contact h2{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:15px ;
+    font-size:50px;
+}
+.services .items .item{
+    float: left;
+    width: 25%;
+    height:50%;
+    text-align: center;
+    padding: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    transition: 0.5s;
+}
+.items .item h3{
+    padding: 10px 0;
+}
+.title h2{
+    position: relative;
+    padding-bottom: 20px;
+}
+.border{
+    width:200px;
+    height: 1px;
+    background-color: #ff305b;
+    margin: auto;
+    position: relative;
+}
+.border::before ,.border::after{
+    content:"";
+    position: absolute;
+    width:100px;
+    height: 1px;
+    background-color: #ff305b;
+    transform: translate(50%);
+}
+.border::before {
+    top: 9px;
+}
+.border::after{
+    bottom: 10px;
+}
+.services .item:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+.services .item i{
+    transition: 0.5s 0.3s !important;
+}
+.services .item:hover i{
+    transform: scale(1.5) !important;
+}
+/* portfolio */
+.list{
+    text-align: center;
+    padding-top: 2%;
+}
+.portfolio .list li{
+    display: inline-block;
+    margin: 15px;
+    transition: 0.5s;
+}
+.portfolio .list .active,.portfolio .list li:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+.portfolio .items img {
+    width:94%;
+    height: 340px;
+}
+.portfolio .items .item {
+    float:left;
+    width: 33%;
+    position: relative;
+    padding:20px;
+    transition: 0.5s;
+}
+.portfolio .items .item .layer{
+    background-color: #abadb09c;
+    position: absolute;
+    top: 0%;
+    width:86%;
+    height: 340px;
+    margin:20px 0;
+    transition: 0.6s;
+    opacity: 0;
+}
+.portfolio .item:hover .layer{
+    opacity:1;
+}
+.portfolio .layer span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/* date */
+.date{
+    width: 100%;
+    height: 30%;
+   background-color:RGB(241, 241, 241);
+}
+.date .items{
+    width: 80%;
+    margin: auto;
+}
+.date .item{
+    float: left;
+    padding:50px 80px;
+    width: 25%;
+    text-align: center;
+}
+.date .item i ,.date .item h2{
+    margin-top: 10px;
+}
+/* Testimonial */
+.Testimonial{
+    width: 70%;
+    margin: auto;
+}
+.sec-Testimonial{
+    padding: 60px 25px;
+    background-color: RGB(241, 241, 241);
+    border-radius: 10px;
+    margin: 50px 0;
+   background-image: linear-gradient(135deg,  #ff305b 15%, #ededed 15%);
+   padding: 50px;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+
+}
+.sec-Testimonial img{
+    border-radius: 50%;
+}
+.sec-Testimonial .imagetest{
+    width:10%;
+    display: inline;
+}
+.Testimonial .title h2{
+    padding: 20px;
+    text-align: center
+}
+.text-Testimonial{
+    width: 80%;
+    display: inline;
+    float: right;
+    padding:70px 0 0 0 ;
+}
+.stars{
+    float: left;
+    padding: 10px 0;
+}
+.stars li{
+   display: inline;
+}
+.Testimonial .scroll{
+    width: fit-content;
+    margin: 30px auto;
+}
+.Testimonial .scroll span{
+    display: inline-block;
+    border: 1px solid #ff305b;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+.Testimonial .scroll span:nth-child(2){
+    width: 20px;
+    background-color: #ff305b;
+}
+.blog{
+    width: 100%;
+  background-color:RGB(241, 241, 241);
+}
+.items-blog{
+    width: 70%;
+    margin: auto;
+    padding:25px 0 ;
+}
+.item-blog{
+    width: 33%;
+    float: left;
+    padding: 25px;
+    border-radius: 100px;
+}
+.item-blog img{
+    width: 100%;
+    height: 230px;
+}
+.item-blog .text{
+    background-color: #ffff;
+    padding: 15px;
+}
+.blog a{
+    text-decoration: none;
+    color: #ff305b;
+}
+/* contact */
+.Contact  input{
+    width: 98%;
+    display: block;
+    padding: 15px;
+    margin:10px;
+    border-radius:15px;
+}
+.inputs-contact input:focus{
+    border: 3px solid  #ff305b; 
+}
+.Contact .inputs-contact{
+    width: 70%;
+    margin: auto;
+    padding:50px 0;
+}
+.Contact .smallinput{
+    width: 48%;
+    float: left;
+}
+.inputs-contact button{
+    background-color:  #ff305b;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left:10px;
+}
+.inputs-contact .message{
+    height: 100px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: RGB(85, 85, 85);
+    color: #ffff;
+    text-align: center;
+}
+.footer .container{
+    padding: 50px 0;
+}
+.footer ul{
+    display: inline-block;
+}
+.footer .social a{
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer ul li {
+    float: left;
+    padding: 10px 0;
+}
+/* media */
+@media (min-width: 576px) {
+    .container {
+       width: 540px;
+    }
+ }
+ 
+ @media (min-width: 768px) {
+    .container {
+       width: 720px;
+    }
+ }
+ 
+ @media (min-width: 992px) {
+    .container {
+       width: 960px;
+    }
+ }
+ 
+ @media (min-width: 1200px) {
+    .container {
+       width: 1140px;
+    }
+ }
+ 
+ @media (min-width: 1400px) {
+    .container {
+       width: 1320px;
+    }
+ }
+ @media (max-width: 767.98px){
+    label{
+        display: block;
+        padding-right: 25px;
+    }
+    .nav{
+        width: 100%;
+      float: unset;
+      top: 100%;
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      background-color: rgba(17, 17, 17, 0.332);
+      text-align: center;
+      position: absolute;
+      transition: 1s;
+    }
+    .services .item,
+    .portfolio .item {
+       width: 50%;
+    } 
+    #menu:checked ~ .nav {
+        height: 100vh;
+     }
+     .home ul li{
+        display: block;
+     }
+     .home ul li a{
+        display: block;
+        margin: 10px 0;
+        padding: 10px 0;
+        background-color: rgb(126, 111, 111);
+     }
+ }
